@@ -13,7 +13,7 @@ def home():
 def search():
     try:
         query = request.json.get('query')
-        api_key = os.environ.get('a6985b775c6f8b0d67c92d65afed509dea951b0f')  # 从环境变量读取密钥
+        api_key = os.environ.get('SERPER_API_KEY')  # 从环境变量读取密钥
         if not api_key:
             return jsonify({"error": "API key missing"}), 500
 
