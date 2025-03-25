@@ -3,3 +3,4 @@ werkzeug==2.0.3  # 关键！锁定兼容版本
 requests==2.26.0
 beautifulsoup4==4.10.0
 gunicorn==20.1.0  # 必需用于生产部署
+python-docx==0.8.11  # 用于生成 Word 文档
